@@ -18,7 +18,9 @@ const Task = ({ taskObj, onComplete }) => {
           {intlFormatDistance(deadline, Date.now())}
         </span>
       </div>
-      <p>{taskObj.description}</p>
+      <p className="pt-[0.5rem] pb-[0.75rem] text-[14px] text-[#444]">
+        {taskObj.description}
+      </p>
       <div>
         {taskObj.people.map((p) => (
           <span className="pill" key={p}>
