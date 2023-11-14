@@ -10,7 +10,7 @@ const Task = ({ taskObj, onComplete }) => {
   console.log("***********render bitti*************");
 
   return (
-    <div className="task">
+    <div className="p-[1.5rem] bg-[#fff] rounded-[5px]  leading-6 mt-4 shadow-md ">
       <h3>{taskObj.title}</h3>
       <div className="deadline">
         son teslim:{" "}
