@@ -14,7 +14,7 @@ const Task = ({ taskObj, onComplete }) => {
       <h3 className="text-[18px] text-[#c8781a] ">{taskObj.title}</h3>
       <div className="deadline">
         son teslim:{" "}
-        <span className={daysLeft <= 3 ? "bg-red-400" : "bg-indigo-200 "}>
+        <span className={daysLeft <= 3 ? "bg-[#ffd9d4]" : "bg-indigo-100 "}>
           {intlFormatDistance(deadline, Date.now())}
         </span>
       </div>
