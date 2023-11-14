@@ -29,7 +29,12 @@ const Task = ({ taskObj, onComplete }) => {
         ))}
       </div>
       {onComplete && (
-        <button onClick={() => onComplete(taskObj.id)}>Tamamlandı</button>
+        <button
+          className="block py-[8px] px-[12px] ml-auto bg-[#fecc91] shadow-taskButton  rounded-[3px] border-none cursor-pointer"
+          onClick={() => onComplete(taskObj.id)}
+        >
+          Tamamlandı
+        </button>
       )}
     </div>
   );
