@@ -11,7 +11,7 @@ const Task = ({ taskObj, onComplete }) => {
 
   return (
     <div className="p-[1.5rem] bg-[#fff] rounded-[5px]  leading-6 mt-4 shadow-md ">
-      <h3>{taskObj.title}</h3>
+      <h3 className="text-[18px] text-[#c8781a] ">{taskObj.title}</h3>
       <div className="deadline">
         son teslim:{" "}
         <span className={daysLeft <= 3 ? "bg-red-400" : "bg-indigo-200 "}>
